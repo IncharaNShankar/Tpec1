@@ -1,0 +1,12 @@
+The power Sum
+
+
+int power = pow(num, N);
+    if (power > X) {
+        return 0;
+    } else if (power == X) {
+        return 1;
+    } else {
+        return powerSumHelper(X - power, N, num + 1) + powerSumHelper(X, N, num + 1);
+    }
+}
