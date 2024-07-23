@@ -10,3 +10,6 @@ int power = pow(num, N);
         return powerSumHelper(X - power, N, num + 1) + powerSumHelper(X, N, num + 1);
     }
 }
+
+return powerSumHelper(X, N, 1);
+
