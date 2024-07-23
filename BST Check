@@ -1,0 +1,17 @@
+BST Check 
+
+
+
+int is_bst(struct node* root)
+{
+    if (root)
+    {
+        if (!is_bst(root->left))
+            return 0;
+        if (prev != NULL && root->data <= prev->data)
+            return 0;
+        prev = root;
+        return is_bst(root->right);   
+    }
+    return 1;
+}
