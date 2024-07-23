@@ -1,0 +1,9 @@
+Pattern-Syntax-Checker
+
+String pattern = in.nextLine();
+			try{
+				Pattern pat=Pattern.compile(pattern);
+				System.out.println("Valid");
+			}catch(Exception e){System.out.println("Invalid");}
+			testCases--;
+		}
